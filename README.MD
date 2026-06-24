@@ -48,6 +48,10 @@ pip install -r requirements.txt
 2. Ensure the dataset path is correct for your environment
 3. Run the notebook cells in order
 
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
 ## Outputs
 
 The notebook generates:
