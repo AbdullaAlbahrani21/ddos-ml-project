@@ -1,10 +1,12 @@
 # DDoS Detection Project
 
-This project explores machine learning techniques for detecting DDoS attacks using an SDN-based dataset. The workflow is implemented in the notebook [DDos_Notebook.ipynb](DDos_Notebook.ipynb) and includes data preprocessing, feature selection, class balancing, model training, evaluation, and visualization.
+This repository contains a machine learning workflow for detecting DDoS traffic using an SDN-based dataset. The implementation is provided in [DDos_Notebook.ipynb](DDos_Notebook.ipynb) and includes data preprocessing, feature selection, class balancing, model training, evaluation, and visualization.
 
-## Project Overview
+## Project Goal
 
-The goal of this project is to compare several classification models for identifying DDoS traffic versus benign traffic. The notebook evaluates:
+The aim of this project is to compare several classification models for distinguishing DDoS traffic from benign traffic.
+
+### Models included
 
 - Random Forest
 - Logistic Regression
@@ -16,51 +18,51 @@ The goal of this project is to compare several classification models for identif
 
 The project uses a dataset named `dataset_sdn.csv`.
 
-Note: in the notebook, the dataset is loaded from the Colab path `/content/dataset_sdn.csv`. If you are running it locally, update the file path to match your local dataset location.
+> Note: the notebook currently loads the dataset from the Colab path `/content/dataset_sdn.csv`. If you are running it locally, update the file path to match your local dataset location.
 
 ## Workflow
 
 The notebook performs the following steps:
 
-1. Importing required libraries
+1. Importing the required libraries
 2. Loading and inspecting the dataset
-3. Cleaning the data by handling null values, duplicates, and outliers
+3. Cleaning the data by handling missing values, duplicates, and outliers
 4. Selecting important features
 5. Balancing the dataset using undersampling
-6. Splitting data into train and test sets
+6. Splitting the data into training and testing sets
 7. Training multiple classification models
-8. Evaluating models using accuracy, precision, recall, F1 score, and confusion matrices
+8. Evaluating performance using accuracy, precision, recall, F1 score, and confusion matrices
 9. Visualizing model performance
 
 ## Requirements
 
-Install the required Python packages before running the notebook:
+Install the required dependencies with:
 
 ```bash
-pip install pandas numpy scikit-learn imbalanced-learn seaborn matplotlib
+pip install -r requirements.txt
 ```
 
 ## How to Run
 
 1. Open [DDos_Notebook.ipynb](DDos_Notebook.ipynb)
-2. Make sure the dataset path is correct
+2. Ensure the dataset path is correct for your environment
 3. Run the notebook cells in order
 
 ## Outputs
 
 The notebook generates:
 
-- Preprocessed CSV output
-- Confusion matrix visualizations
-- Performance comparison plots
-- Model evaluation metrics
+- a preprocessed CSV file
+- confusion matrix visualizations
+- performance comparison plots
+- evaluation metrics for each model
 
-## Next Steps
+## Possible Next Steps
 
-Possible improvements for this project include:
+Future improvements could include:
 
-- Testing more advanced models such as XGBoost or Gradient Boosting
-- Performing hyperparameter tuning
-- Comparing oversampling vs. undersampling strategies
-- Adding a clean script version of the workflow outside the notebook
-- Preparing the repository for GitHub with proper documentation and version control
+- testing more advanced models such as XGBoost or Gradient Boosting
+- performing hyperparameter tuning
+- comparing undersampling and oversampling strategies
+- converting the workflow into a standalone Python script
+- adding more detailed results and visual explanations
