@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite it as below."
+authors:
+  - family-names: Albahrani
+    given-names: Abdulla
+title: "DDoS Detection Project"
+version: 1.0.0
+date-released: 2026-06-25
+url: "https://github.com/abdullaalbahrani21/ddos-ml-project"

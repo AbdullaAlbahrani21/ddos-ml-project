@@ -1,10 +1,10 @@
 # DDoS Detection Project
 
-This repository contains a machine learning workflow for detecting DDoS traffic using an SDN-based dataset. The implementation is provided in [DDos_Notebook.ipynb](DDos_Notebook.ipynb) and includes data preprocessing, feature selection, class balancing, model training, evaluation, and visualization.
+A practical machine learning project for detecting DDoS traffic using an SDN-based dataset. The workflow is implemented in [DDos_Notebook.ipynb](DDos_Notebook.ipynb) and covers data preprocessing, feature selection, class balancing, model training, evaluation, and visualization.
 
-## Project Goal
+## Overview
 
-The aim of this project is to compare several classification models for distinguishing DDoS traffic from benign traffic.
+This project compares several classification models to distinguish benign traffic from DDoS traffic. It is designed as a reproducible, educational example of applying supervised learning to network intrusion detection.
 
 ### Models included
 
@@ -20,9 +20,9 @@ The project uses a dataset named `dataset_sdn.csv`.
 
 > Note: the notebook currently loads the dataset from the Colab path `/content/dataset_sdn.csv`. If you are running it locally, update the file path to match your local dataset location.
 
-## Workflow
+## Project Workflow
 
-The notebook performs the following steps:
+The notebook performs the following stages:
 
 1. Importing the required libraries
 2. Loading and inspecting the dataset
@@ -36,21 +36,19 @@ The notebook performs the following steps:
 
 ## Requirements
 
-Install the required dependencies with:
+Install the dependencies with:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## How to Run
+## Getting Started
 
-1. Open [DDos_Notebook.ipynb](DDos_Notebook.ipynb)
-2. Ensure the dataset path is correct for your environment
-3. Run the notebook cells in order
-
-## License
-
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+1. Clone the repository
+2. Install the dependencies
+3. Open [DDos_Notebook.ipynb](DDos_Notebook.ipynb)
+4. Ensure the dataset path is correct for your environment
+5. Run the notebook cells in order
 
 ## Outputs
 
@@ -61,12 +59,18 @@ The notebook generates:
 - performance comparison plots
 - evaluation metrics for each model
 
-## Possible Next Steps
+## License
 
-Future improvements could include:
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
-- testing more advanced models such as XGBoost or Gradient Boosting
-- performing hyperparameter tuning
-- comparing undersampling and oversampling strategies
-- converting the workflow into a standalone Python script
-- adding more detailed results and visual explanations
+## Contributing
+
+Contributions are welcome. Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+
+## Security
+
+If you discover a security issue, please review [SECURITY.md](SECURITY.md) for reporting guidance.
+
+## Citation
+
+If you use this project in your work, please cite it using [CITATION.cff](CITATION.cff).
